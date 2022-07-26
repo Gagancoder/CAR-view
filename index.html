@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Custom Car Design</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="Base.js"></script>
+    <script src="Car.js"></script>
+
+  </head>
+  <body>
+    <a-scene>
+      
+      <!-- PLANE BASE -->
+      <a-entity id="base" base></a-entity>
+      <!-- CAR MODEL -->
+      <a-entity id="car-model" car-model></a-entity>
+
+      <!-- CAMERA -->
+      <a-entity
+        camera
+        look-controls
+        wasd-controls
+        position="0 70 300" ></a-entity>  <!--Sky-->
+        <a-sky src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1">
+
+        </a-sky>
+    </a-scene>
+  </body>
+</html>
